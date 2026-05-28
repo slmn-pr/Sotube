@@ -14,17 +14,17 @@ export default function HomeNavbar() {
           <Link href="/">
             <div className="p-4 flex items-center gap-1">
               <Image src="/logo.svg" width={32} height={32} alt="Logo" />
-              <p className="text-xl font-semibold tracking-tight">Sotube</p>
+              <p className="text-xl font-semibold tracking-tight">Soutube</p>
             </div>
           </Link>
         </div>
 
         {/* Search bar */}
         <div className="flex-x flex justify-center max-w-[720px] mx-auto">
-            <SearchInput />
+          <SearchInput />
         </div>
         <div className="flex shrink-0 items-center gap-4">
-            <AuthButton />
+          <AuthButton />
         </div>
       </div>
     </nav>

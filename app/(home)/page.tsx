@@ -3,7 +3,11 @@ import ClientPage from "./client";
 import { Suspense } from "react";
 
 export default async function Home() {
-  prefetch(trpc.hello.queryOptions({ text: "Salman !!!!" }));
+  await prefetch(
+    trpc.hello.queryOptions({
+      text: "world",
+    }),
+  );
 
   return (
     <HydrateClient>
